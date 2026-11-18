@@ -15,7 +15,7 @@ docker run -d --name container-portas -p 9090:4000 api-node-classroom:1.1
 ```
 
 - **Evidência (Print ou Saída do Terminal) do acesso em `http://localhost:9090`:**
-![](/assets/passo01.png)
+![](/lab02/assets/passo01.png)
 ---
 
 ## 🎯 Passo 2: Variáveis de Ambiente (Configuração Dinâmica)
@@ -28,10 +28,10 @@ docker run -d --name container-prod -p 8081:4000 -e APP_MESSAGE="Ambiente de Pro
 ```
 
 - **Evidência do acesso em `http://localhost:8081/info` (Produção):**
-![](/assets/passo2_1.png)
+![](/lab02/assets/passo2_1.png)
 
 - **Evidência do acesso em `http://localhost:8082/info` (Testes):**
-![](/assets/passo2_2.png)
+![](/lab02/assets/passo2_2.png)
 
 *(Opcional)* **Utilizou o arquivo `.env`? Descreva brevemente como foi feito:**
 
@@ -52,10 +52,10 @@ docker run -d --name container-aviso -p 8083:4000 -v "$(pwd)/dados:/usr/src/app/
 ```
 
 - **Evidência 1: Acesso em `http://localhost:8083/aviso` (Texto Original):**
-![](/assets/passo3_1.png)
+![](/lab02/assets/passo3_1.png)
 
 - **Evidência 2: Acesso em `http://localhost:8083/aviso` (Após alterar o arquivo `aviso.txt` localmente):**
-![](/assets/passo3_2.png)
+![](/lab02/assets/passo3_2.png)
 
 ---
 
